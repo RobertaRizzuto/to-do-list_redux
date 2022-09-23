@@ -1,0 +1,32 @@
+.Task {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  .text {
+    display: flex;
+  }
+  span {
+    font-family: "Cabin Sketch", cursive;
+    padding: 0 5px;
+    background-color: #e4dacdd7;
+  }
+  .checkbox:checked + span {
+    text-decoration: line-through;
+  }
+  .button {
+    color: rgb(35, 35, 35);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.35s;
+    font-weight: bold;
+    border: 0;
+    margin-right: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.398);
+
+    &:hover {
+      filter: saturate(0.8);
+      background-color: rgb(254, 84, 84);
+    }
+  }
+}

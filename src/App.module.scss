@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #b25320 white;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(219, 219, 223, 0.353);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://img.freepik.com/premium-photo/top-view-wood-office-desk-table-flat-lay-workspace_35380-2875.jpg?w=2000);
+}

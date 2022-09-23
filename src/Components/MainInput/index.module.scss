@@ -1,0 +1,28 @@
+.MainInput {
+  .button {
+    color: rgb(35, 35, 35);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.35s;
+    font-weight: bold;
+    border: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.398);
+    padding: 15px 25px;
+    background-color: rgb(254, 84, 84);
+    margin: 8px;
+    &:hover {
+      filter: saturate(0.8);
+    }
+    &:disabled {
+      filter: saturate(0.1);
+      color: rgb(166, 165, 165);
+    }
+  }
+
+  .input {
+    padding: 15px 25px;
+    color: rgb(35, 35, 35);
+    border-radius: 12px;
+    margin: 10px;
+  }
+}

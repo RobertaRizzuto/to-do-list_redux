@@ -1,0 +1,23 @@
+.TasksList {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.398);
+  border-radius: 20px;
+  width: 60%;
+  height: 60%;
+  background-image: url(./notepadpage1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .list {
+    font-family: "Cabin Sketch", cursive;
+    list-style-type: none;
+    display: flex;
+   
+    flex-direction: column;
+
+    overflow-y: scroll;
+    height: 60vh;
+    gap: 10px;
+  }
+}
