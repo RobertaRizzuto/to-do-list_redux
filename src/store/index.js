@@ -26,6 +26,8 @@ const listArrayReducer = (state = {}, action) => {
     switch (action.type) {
       case "SET_ARRAY_DATA":
         return { ...state, data: action.payload };
+        case "DELETE_ARRAY_DATA":
+        return { ...state, data: [...state.data].filter((_,index)=> index !== action.payload) };
   
       default:
         return state;

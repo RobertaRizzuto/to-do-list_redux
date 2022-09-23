@@ -4,17 +4,18 @@ import Task from "../Task";
 import styles from "./index.module.scss";
 
 const TasksList = () => {
-  const { listArray} = useSelector((state) => state);
+  const { listArray } = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  const onHandleClick = useCallback((e) => {
-      listArray.data.splice(e.target.id, 1);
+  const onHandleClick = useCallback(
+    (id) => {
+  
       dispatch({
-        type: "SET_ARRAY_DATA",
-        payload: [...listArray.data],
+        type: "DELETE_ARRAY_DATA",
+        payload: id,
       });
     },
-    [listArray, dispatch]
+    [dispatch]
   );
   return (
     <div className={styles.TasksList}>
@@ -22,11 +23,9 @@ const TasksList = () => {
         {listArray.data.length >= 0 &&
           listArray.data.map(
             (task, i) =>
-              task.trim() && 
-              (
+              task.trim() && (
                 <Task key={i} id={i} onHandleClick={onHandleClick}>
                   {task}
-                  
                 </Task>
               )
           )}

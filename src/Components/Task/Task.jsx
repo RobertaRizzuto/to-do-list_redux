@@ -4,7 +4,7 @@ const Task = ({ children,onHandleClick,id }) => {
     <li className={styles.Task}>
       <div className={styles.text}><input type="checkbox" className={styles.checkbox} />
       <span >{children}</span></div>
-      <button className={styles.button} id={id} onClick={onHandleClick}>
+      <button className={styles.button} id={id} onClick={() => onHandleClick(id)}>
         X
       </button>
     </li>
